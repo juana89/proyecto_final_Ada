@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta charset ="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE-edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Proyecto Final Ada</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+ 
+         <style>
+          html,body{
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+          background: #FCF3CF ;
+       }
+       
+          #menu{
+                background-color:#b17e7e;
+          }
+           #menu ul{
+                 list-style:none;
+                 padding: 1px;
+                }
+          #menu ul li{
+                    display:inline-block;
+                    
+                  }
+           #menu ul li a{
+                  color: white;
+                  display:block;
+                  padding:10px;
+                  text-decoration:none;
+               }
+              #menu ul li a:hover{
+                  background-color:rgb(158, 42, 77);
+              }
+          .contenedor{
+       position:absolute;
+        top: 10px;
+         left: 950px;
+        background-color: rgb(158, 42, 77);
+        }    
+              
+        footer{
+      text-align: center;
+        background-color: rgb(158, 42, 77);
+        position:absolute;
+        bottom:1px;
+        width: 100%;
+        height: 30px;
+        color: white;
+        font-size: small;
+     }
+        </style>
+        
+    </head>
+  
+ <body>
+           <div class="logo">
+                 <a>
+                      <img  src="https://1ra-intro-python.adaitw.org/img/iso_blanco.svg" width="90" height="30">
+                 </a>
+            </div>
+   
+   
+        <nav id= "menu">
+         
+           <ul >
+                   <li><a class="navbar-item is active" href="#">Movimientos</a></li>
+                   <li><a class="navbar-item" href="proceso_archivos.html">Proceso de Archivos</a></li>
+          </ul>
+
+               <form class="contenedor" action= "/procesar" method="post">
+                    <input class="input" type="text" name="dni" id="dni" placeholder="Nro de DNI...">
+                    <button class="button" onclick="searchByDNI()"> Buscar </button>   
+                </form>            
+        </nav>
+       <div>
+          <h1>Bienvenida,{{saludo}}</h1>
+       </div>
+      
+        <div>
+          {{movimiento}}
+        </div>  
+    
+    <footer>
+     
+      <p>-Proyecto Final Ada-Mayo-2023-</p>
+      
+    </footer>
+  
+    
+  </body>
+<html>
